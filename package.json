@@ -1,0 +1,25 @@
+{
+  "name": "add-ad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd addad-backend && node index.js\" \"cd addad-client && npm start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertzanceanu/Add-Ad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertzanceanu/Add-Ad/issues"
+  },
+  "homepage": "https://github.com/robertzanceanu/Add-Ad#readme",
+  "dependencies": {
+    "concurrently": "^4.1.1",
+    "multer-gridfs-storage": "^3.2.3",
+    "react-grid-gallery": "^0.5.5"
+  }
+}

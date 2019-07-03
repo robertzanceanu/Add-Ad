@@ -1,0 +1,423 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');   
+
+
+
+body{
+  margin:0;
+}
+
+.header{
+  height: 80px;
+  background-color:#1E90FF;
+  padding:1px;
+}
+.title{
+  color:#FFFFFF;
+  font-size:33px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top:1.5%;
+}
+.content{
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-around;
+  /* background-color:#FFFAFA; */
+}
+.announces{
+  text-align:center;
+  width:100%;
+}
+.addAdButton{
+  position:fixed;
+  bottom:4rem;
+  align-self: flex-end;
+  left:90%;
+}
+.noAd{
+  text-align:center;
+}
+.addAd{
+  background-color:#1E90FF;
+  border:none;
+  color:white;
+  border-radius: 8px;
+  padding:20px;
+  text-align: center;
+  margin: 4px 2px;
+  cursor: pointer;
+  float:right;
+  margin-right:3%;
+}
+.popup{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  background-color:rgba(0,0,0, 0.5);
+}
+.innerPopup{
+  position:absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+  overflow:auto;
+}
+.err{
+  padding: 10px;
+  width: 48.6%;
+  color: #D8000C;
+  background-color: #FFBABA;
+  font-weight: 300;
+  margin-left:25%;
+  margin-top:9.3%;
+}
+.previewPhoto{
+  border:1px solid;
+  height:100px;
+  width:100px;
+}
+.previewPhoto img{
+  width:100%;
+  height:100%;
+}
+.topPopup{
+  display:flex;
+  flex-direction: row;
+}
+.topForm{
+  display:flex;
+  flex-direction: column;
+}
+.closeButton{
+  position: absolute;
+  right: 0;
+  top: 2%;
+  width: 5%;
+  height: 32px;
+  opacity: 0.3;
+}
+.closeButton:hover {
+  opacity: 1;
+}
+.closeButton:before, .closeButton:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: #FA8072;
+}
+.closeButton:before {
+  transform: rotate(45deg);
+}
+.closeButton:after {
+  transform: rotate(-45deg);
+}
+.formTitle{
+    font-size: 20px;
+    margin-left:43%;
+    color: #1E90FF;
+    font-weight: bold;
+}
+.addTitle{
+  margin-left: 2%;
+  margin-right: 1%;
+  height: 30px;
+  font-size: 15px;
+}
+.topFormBody{
+  display:flex;
+  margin-left:2%;
+}
+.type{
+  display:flex;
+  flex-direction:column;
+}
+.typeTitle{
+  font-size:15px;
+  color: #1E90FF;
+  font-weight: bold;
+}
+.types{
+
+}
+.address{
+  margin-top:5%;
+  margin-left:1%;
+  height:25px;
+}
+.phone{
+  margin-top:5%;
+  margin-left:1%;
+  height:25px;
+}
+.price{
+  margin-top:5%;
+  margin-left:1%;
+  margin-right:1%;
+  height:25px;
+}
+.midForm{
+  margin-left:2%;
+  display:flex;
+  flex-direction: column;
+}
+input[type=text], select{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.uploadImg{
+  font-size:15px;
+  color: #1E90FF;
+  font-weight: bold;
+}
+.bottomForm{
+  margin-top:1%;
+  display:flex;
+  flex-direction: column;
+}
+.bottomInput{
+  margin-left: 2%;
+  margin-right: 1%;
+  height: 50px;
+  font-size: 15px;
+}
+.submit{
+  margin-top:1%;
+  width:21%;
+  height:30px;
+  text-align: center;
+  border-radius:4px;
+  margin-left:43%;
+  background-color:#1E90FF;
+  color:white;
+  font-weight: bold;
+  border: 1px solid #1E90FF;
+  margin-bottom: 1%;
+}
+.footer{
+  position: fixed;
+  height:50px;
+  bottom:0;
+  left:0;
+  right:0;
+  display: flex;  
+  background-color:#1E90FF;
+}
+
+
+.add{
+  margin-top:3%;
+  width:60%;
+  height:250px;
+ 
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.9);
+  border-radius: 3%;
+  margin-left:20%;
+  margin-bottom:5%;
+  display:flex;
+  
+}
+.active{
+  height: 500px;
+}
+.cardInfo1{
+  display: inline-flex;
+}
+.active .cardTitle{
+  margin-top:10%;
+  height:70px;
+  white-space:normal; 
+  /* overflow: auto; */
+  text-overflow: none;
+}
+.active .cardDescription{
+  height:150px;
+}
+.active .cardInfos{
+  flex-direction: column;
+}
+.active .cardType{
+  margin-left:20%;
+}
+.active .cardAddress{
+  margin-left:5%;
+  width:81%;
+}
+.active .cardPhoneNumber{
+  margin-top:5%;
+}
+.active .seeLess{
+  font-size:18px;
+  margin-left:9%;
+  display:inline;
+  margin-top:5%;
+}
+.active .seeMore{
+  display:none;
+}
+/* .accor .body {
+  background: #fafafa;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 200ms ease-in-out;
+} */
+/* .cardElements{
+  display:flex;
+  height:250px;
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.9);
+} */
+.add:hover{
+  transform: scale(1.1);
+}
+.cardPopup{
+  /* pointer-events: none; */
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  background-color:rgba(0,0,0, 0.5);
+  z-index:100;
+}
+.cardInnerPopup{
+  /* pointer-events: none; */
+  position:absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+  overflow:auto;
+}
+.adDetails{
+  width:80%;
+  color:black;
+  display:flex;
+  flex-direction:column;
+}
+
+.cardTitle{
+  font-weight: bold;
+  font-size:20px;
+  margin-top:3%;
+  height:50px;
+  width:529px;
+  margin-left:4%;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cardImg{
+  
+  /* width:10?0%; */
+  margin-top:3%;
+  margin-left:2%;
+  width:180px;
+  height:180px;
+  border-radius:50%;
+}
+.cardInfos{
+  display:flex;
+  margin-left:5%;
+}
+.cardPrice{
+  margin-left:2%;
+  font-size:18px;
+  width:200px;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* margin-top:0%; */
+}
+.cardType{
+  font-size:18px;
+  margin-left:2%;
+  white-space: nowrap;
+}
+.cardAddress{
+  margin-left:3%;
+  font-size:18px;
+  white-space: nowrap; 
+  overflow: hidden;
+  width:107px;
+  text-overflow: ellipsis;
+}
+.cardPhoneNumber{
+  margin-left:26%;
+  font-size:18px;
+  width: 205px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* border:1px solid; */
+  height:30px;
+  margin-top:0%;
+}
+.cardDescription{
+  margin-top:0%;
+  width:508px;
+  margin-left:8%;
+  height:100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* color:#708090; */
+}
+.seeMore{
+  font-size:18px;
+  margin-top:0%;
+  margin-left:9%;
+}
+.seeLess{
+  display:none;
+}
+.cardBottom{
+  display:flex;
+  
+}
+.gallery{
+position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  background-color:rgba(0,0,0, 0.5);
+}
+.innerGallery{
+  position:absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+  overflow:auto;
+}
+.photo{
+  cursor:pointer;
+}
+.footer-text-name{
+  margin-left:5%;
+  color:#FFFFFF;
+}
+.footer-text{
+  margin-left:69%;
+  color:#FFFFFF;
+}
