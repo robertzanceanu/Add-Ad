@@ -23,15 +23,12 @@ class Popup extends React.Component {
             imgCompleted: false,
             closePopup: false
         };
-        // this.handleErrors = this.handleErrors.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleSubmit(event) {
         event.preventDefault();
-        //const imgs = new FormData();
-        //imgs.append('file',this.state.img1);
         if (this.state.titleCompleted === true && this.state.typeCompleted === true && this.state.addressCompleted === true && this.state.priceCompleted === true && this.state.phoneNumberCompleted === true && this.state.descriptionCompleted === true && this.state.imgCompleted === true) {
             const data = {
                 Title: this.state.Title,
@@ -40,12 +37,7 @@ class Popup extends React.Component {
                 Address: this.state.Address,
                 Price: this.state.Price,
                 PhoneNumber: this.state.PhoneNumber,
-                //img1 : imgs
             }
-            // console.log(data.img1);
-            // console.log(this.state.img1);
-            // data.img1.append('file',this.state.img1);
-            // console.log(data.img1);
             console.log(data);
             axios.post('http://localhost:3001/api/post', {
                 body: data

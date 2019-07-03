@@ -40,8 +40,6 @@ export default class Announces extends React.Component {
             IMAGES: null,
             photoIndex: 0
         }
-        // this.openGallery = this.openGallery.bind(this);
-        // this.setIMAGES = this.setState.bind(this);
     }
 
     componentDidMount = () => {
@@ -53,8 +51,6 @@ export default class Announces extends React.Component {
     render() {
         if (this.state.data) {
             const {photoIndex} = this.state;
-            // let routeImg = "../../uploads/"+this.state.data.img[0];
-            // console.log(routeImg);
             console.log(this.state.data);
             for (var date in this.state.data) {
                 for (var imgs in this.state.data[date].img) {

@@ -5,7 +5,6 @@ const adsSchema = new mongoose.Schema({
     Title: String,
     Description: String,
     TypeOfAp: String,
-    // img1: String,
     Address: String,
     Price: String,
     PhoneNumber: String,

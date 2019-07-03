@@ -22,7 +22,6 @@ body{
   display: flex;
   align-self: flex-start;
   justify-content: space-around;
-  /* background-color:#FFFAFA; */
 }
 .announces{
   text-align:center;
@@ -146,9 +145,7 @@ body{
   color: #1E90FF;
   font-weight: bold;
 }
-.types{
 
-}
 .address{
   margin-top:5%;
   margin-left:1%;
@@ -237,7 +234,6 @@ input[type=text], select{
   margin-top:10%;
   height:70px;
   white-space:normal; 
-  /* overflow: auto; */
   text-overflow: none;
 }
 .active .cardDescription{
@@ -265,18 +261,6 @@ input[type=text], select{
 .active .seeMore{
   display:none;
 }
-/* .accor .body {
-  background: #fafafa;
-  padding: 0 20px;
-  max-height: 0;
-  overflow: hidden;
-  transition: 200ms ease-in-out;
-} */
-/* .cardElements{
-  display:flex;
-  height:250px;
-  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.9);
-} */
 .add:hover{
   transform: scale(1.1);
 }
@@ -294,7 +278,6 @@ input[type=text], select{
   z-index:100;
 }
 .cardInnerPopup{
-  /* pointer-events: none; */
   position:absolute;
   left: 25%;
   right: 25%;
@@ -323,8 +306,6 @@ input[type=text], select{
   text-overflow: ellipsis;
 }
 .cardImg{
-  
-  /* width:10?0%; */
   margin-top:3%;
   margin-left:2%;
   width:180px;
@@ -342,7 +323,6 @@ input[type=text], select{
   white-space: nowrap; 
   overflow: hidden;
   text-overflow: ellipsis;
-  /* margin-top:0%; */
 }
 .cardType{
   font-size:18px;
@@ -364,7 +344,6 @@ input[type=text], select{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* border:1px solid; */
   height:30px;
   margin-top:0%;
 }
@@ -375,7 +354,6 @@ input[type=text], select{
   height:100px;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* color:#708090; */
 }
 .seeMore{
   font-size:18px;
