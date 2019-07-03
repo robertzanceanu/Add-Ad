@@ -237,10 +237,10 @@ class Popup extends React.Component {
                                 <p className="typeTitle">Type of apartment</p>
                                 <select name="type" className="types" onChange={this.handleChange}>
                                     <option value="selectOne">Select one</option>
-                                    <option value="1room">1 room</option>
-                                    <option value="2rooms">2 rooms</option>
-                                    <option value="3rooms">3 rooms</option>
-                                    <option value="4rooms">4 rooms</option>
+                                    <option value="1">1 room</option>
+                                    <option value="2">2 rooms</option>
+                                    <option value="3">3 rooms</option>
+                                    <option value="4">4 rooms</option>
                                     <option value="more">more</option>
                                 </select>
                             </div>

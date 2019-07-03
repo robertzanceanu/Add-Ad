@@ -410,6 +410,10 @@ position:fixed;
   background: white;
   overflow:auto;
 }
+.image{
+  display:flex;
+  flex-direction:column;
+}
 .photo{
   cursor:pointer;
 }

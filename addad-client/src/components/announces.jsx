@@ -71,7 +71,7 @@ export default class Announces extends React.Component {
                             this.state.data.map((item, index) => {
                                 return (
                                     <div key={item._id} className="add">
-
+                                        <div className="image">
                                         <img src={item.img[0]} className="cardImg"></img>
 
                                         <p key={item._id} onClick={() => {this.setState({ ...this.state,open: true }) }} className="photo">Click here to see the images</p>
@@ -97,6 +97,7 @@ export default class Announces extends React.Component {
                                                 />
                                             )
                                         }
+                                        </div>
                                         <div className="adDetails">
                                             <p className="cardTitle">{item.Title}</p>
                                             <div className="cardInfos">
